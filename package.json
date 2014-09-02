@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/GamaLabs/gama-asset-client/issues"
   },
+  "scripts": {
+    "start": "nodewebkit app.nw"
+  },
   "licenses": [
     {
       "type": "MIT",
