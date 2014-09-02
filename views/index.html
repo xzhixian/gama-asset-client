@@ -25,7 +25,7 @@
         <div class="panel-body">
           <div class="messages" id="result_message">
           </div>
-          <form id="post_session_form" action="#" method="post" class="user-form form-horizontal">
+          <form id="post_session_form" action="javascript:process.mainModule.exports.gamaServerURL()" method="post" class="user-form form-horizontal">
             <div class="form-group">
               <label class="col-sm-3 input-lg control-label">
                 Email:
@@ -67,5 +67,12 @@
 </div>
 <footer class="simple">© 2014 Gama Labs. All rights reserved.
 </footer>
+<script type="text/javascript">
+  console.dir(process);
+  console.dir(process.mainModule);
+  console.dir(process.mainModule.exports);
+  console.dir(process.mainModule.exports.main());
+  //process.mainModule.exports.gamaServerURL();
+</script>
 </body>
 </html>
