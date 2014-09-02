@@ -35,6 +35,8 @@ A GUI application to manage gama assets on the client side, can be run on Window
  * Request Parameters: null
 
 
+coffee watch js 运行： cake coffee:watch
 
+jade watch html 运行： cake pages
 
 
