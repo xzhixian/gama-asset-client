@@ -114,7 +114,7 @@ build = (watch, callback) ->
     callback = watch
     watch = false
 
-  options = ['-c', '-b', '-o', 'public/js', 'public_src/js']
+  options = ['-c', '-b', '-o', '/app.nw/public/js', 'public_src/js']
   options.unshift '-w' if watch
   launch 'coffee', options, callback
 
@@ -126,21 +126,15 @@ mocha = (options, callback) ->
 
   launch 'mocha', options, callback
 
-PATH_PAGE_OUTPUT = "public/"
-PATH_JADE_BASE = 'views/static_pages'
+PATH_PAGE_OUTPUT = "app.nw/views/"
+PATH_JADE_BASE = 'views_src'
 
 pages =  (callback) ->
-  launch 'jade', [path.join(PATH_JADE_BASE, "index.jade"), "--out", "#{PATH_PAGE_OUTPUT}"], ->
-    launch 'jade', [path.join(PATH_JADE_BASE, "/editor_features/index.jade"), "--out", "#{PATH_PAGE_OUTPUT}editor_features/"], ->
-      launch 'jade', [path.join(PATH_JADE_BASE, "/enterprise_service/index.jade"), "--out", "#{PATH_PAGE_OUTPUT}enterprise_service/"], ->
-        launch 'jade', [path.join(PATH_JADE_BASE, "/case_study/index.jade"), "--out", "#{PATH_PAGE_OUTPUT}case_study/"], ->
-          callback()
-
-  #walk PATH_JADE_BASE, (err, files)->
-    #for file in files
-      #continue unless path.extname(file) is ".jade"
-      #console.log "[Cakefile::pages] file:#{file}"
-      #launch 'jade', [file, "--out #{path.join(PATH_PAGE_OUTPUT, path.relative(file, PATH_JADE_BASE))}"], callback
+  walk PATH_JADE_BASE, (err, files)->
+    for file in files
+      continue unless path.extname(file) is ".jade"
+      console.log "[Cakefile::pages] file:#{file}"
+      launch 'jade', [file, "--out", "#{PATH_PAGE_OUTPUT}"], callback
 
 docco = (callback) ->
   walk 'src', (err, files) -> launch 'docco', files, callback

@@ -1,31 +1,32 @@
 {
-  "name": "gama_asset_client",
-  "main": "./views/index.html",
-  "nodejs": true,
-  "node-main":"./public/js/main.js",
-  "description": "Gama 网站提供的桌面API服务",
-  "version": "0.1.1",
-  "keywords": ["node", "gama", "webkit", "desktop"],
+  "name": "gama-asset-client",
+  "description": "A GUI application to manage gama assets on the client side, can be run on Windows, Mac and Linux",
+  "version": "0.1.0",
   "homepage": "https://github.com/GamaLabs/gama-asset-client",
-  "author":{
+  "author": {
     "name": "GamaLabs",
-    "email": ""
+    "email": "contact@gamalabs.com",
+    "url": "http://www.gamagama.com"
   },
-  "dependencies":{
-    "underscore": "1.5.2"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/GamaLabs/gama-asset-client.git"
   },
-  "window": {
-    "title": "Gama 桌面API服务",
-    "icon": "link.png",
-    "debug": true,
-    "toolbar": false,
-    "resizable":true,
-    "position": "center",
-    "frame":true,
-    "fullscreen": false
+  "bugs": {
+    "url": "https://github.com/GamaLabs/gama-asset-client/issues"
   },
-  "webkit":{
-    "plugin": true
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/GamaLabs/gama-asset-client/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.html",
+  "engines": {
+    "node": ">= 0.8.0"
   },
-  "chromium-args":"--enable-threaded-compositing"
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.2.0"
+  },
+  "keywords": []
 }
