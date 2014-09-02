@@ -1,0 +1,30 @@
+{
+  "name": "gama_asset_client",
+  "main": "./views/index.html",
+  "nodejs": true,
+  "description": "Gama 网站提供的桌面API服务",
+  "version": "0.1.1",
+  "keywords": ["node", "gama", "webkit", "desktop"],
+  "homepage": "https://github.com/GamaLabs/gama-asset-client",
+  "author":{
+    "name": "GamaLabs",
+    "email": ""
+  },
+  "dependencies":{
+    "underscore": "1.5.2"
+  },
+  "window": {
+    "title": "Gama 桌面API服务",
+    "icon": "link.png",
+    "debug": true,
+    "toolbar": false,
+    "resizable":true,
+    "position": "center",
+    "frame":true,
+    "fullscreen": false
+  },
+  "webkit":{
+    "plugin": true
+  },
+  "chromium-args":"--enable-threaded-compositing"
+}
