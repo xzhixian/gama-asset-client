@@ -2,3 +2,5 @@
 .idea
 tags
 app.nw/node_modules/
+*.swp
+*.swo

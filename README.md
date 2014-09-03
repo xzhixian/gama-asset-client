@@ -34,9 +34,20 @@ A GUI application to manage gama assets on the client side, can be run on Window
  * AuthorizatioN: required
  * Request Parameters: null
 
+## 开发相关
 
-coffee watch js 运行： cake coffee:watch
+### 在 node-webkit 中运行本程序
 
-jade watch html 运行： cake pages
+`npm start`
+
+
+### 将 jade 编译成 html
+
+在项目根目录下执行 `cake pages` 或者  `npm run-script jade`
+
+### 将 coffee 编译成 javascript
+
+在项目根目录下执行 `cake coffee:watch'
+
 
 

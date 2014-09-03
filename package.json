@@ -16,7 +16,8 @@
     "url": "https://github.com/GamaLabs/gama-asset-client/issues"
   },
   "scripts": {
-    "start": "nodewebkit app.nw"
+    "start": "nodewebkit app.nw",
+    "jade": "jade views_src/ --out app.nw/views/ -w"
   },
   "licenses": [
     {
