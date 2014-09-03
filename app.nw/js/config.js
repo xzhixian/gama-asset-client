@@ -3,14 +3,10 @@
 /*
  * 配置文件
  */
+var WEB_URL_ROOT, loadWebUrlRoot;
 
-(function() {
-  var WEB_URL_ROOT, loadWebUrlRoot;
+WEB_URL_ROOT = "http://gamagama.cn";
 
-  WEB_URL_ROOT = "http://gamagama.cn";
-
-  loadWebUrlRoot = function() {
-    return WEB_URL_ROOT;
-  };
-
-}).call(this);
+loadWebUrlRoot = function() {
+  return WEB_URL_ROOT;
+};

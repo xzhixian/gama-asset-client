@@ -1,5 +1,29 @@
 extends ./layout
 
+block scripts
+  script(src='./js/index.js', type='text/javascript')
 
+block content
+  .container
+    .text-center(style="margin: 20rem 0 6rem 0;")
+    .row
+      .col-lg-6.col-lg-offset-3
+        form.form-horizontal#enter_form(action="#", method="GET")
+          .form-group
+            label.col-sm-3.input-lg.control-label 项目账号:
+            .col-sm-9
+              .controls
+                input.input-lg.form-control#owner(type="text", name="owner", placeholder="项目账号")
+
+          .form-group
+            label.col-sm-3.input-lg.control-label 项目序列号:
+            .col-sm-9
+              .controls
+                input.input-lg.form-control#serial(type="text", name="serial", placeholder="项目序列号")
+
+          .form-group
+            .col-sm-10
+            label.col-sm-2.input-lg
+              button.btn-lg.btn.btn-primary(type="button", onclick="javascript:enterProject()") 进入项目
 
 

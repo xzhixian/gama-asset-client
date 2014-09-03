@@ -4,10 +4,6 @@
  * webkit 项目的main
  * 独立的context中运行。
  */
-
-(function() {
-  exports.main = function() {
-    return console.log("aaaaaa");
-  };
-
-}).call(this);
+exports.main = function() {
+  return console.log("aaaaaa");
+};
