@@ -12,7 +12,8 @@
     "email": ""
   },
   "dependencies":{
-    "underscore": "1.5.2"
+    "underscore": "1.5.2",
+    "shelljs": "latest"
   },
   "window": {
     "title": "Gama 桌面API服务",
