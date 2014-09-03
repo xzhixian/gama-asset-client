@@ -34,8 +34,8 @@ A GUI application to manage gama assets on the client side, can be run on Window
     * method: http请求的方式（GET或POST）
     * baseUri: 请求的uri地址 （例：http://gamagama.cn/projects）
     * timestamp:请求时的时间戳。（毫秒值， 超过xx毫秒的请求将被视为违法）
-    * clientID: 给定的客户端ID.(在config.js 中配置)
-    * clientSecret: 给定的客户端secret (在config.js中配置)
+    * clientID: Gama 项目 ID
+    * clientSecret: Gama 项目 KEY
     
 ### 获取项目的相关信息
 
