@@ -1,4 +1,6 @@
 /node_modules/
 .idea
 tags
+npm-debug.log
+.swp
 app.nw/node_modules/

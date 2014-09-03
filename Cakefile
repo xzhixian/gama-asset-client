@@ -134,7 +134,7 @@ pages =  (callback) ->
     for file in files
       continue unless path.extname(file) is ".jade"
       console.log "[Cakefile::pages] file:#{file}"
-      launch 'jade', [file, "--out", "#{PATH_PAGE_OUTPUT}"], callback
+      launch 'jade', [file, "--out", "#{PATH_PAGE_OUTPUT}", "--watch"], callback
 
 docco = (callback) ->
   walk 'src', (err, files) -> launch 'docco', files, callback
