@@ -1,8 +1,8 @@
 {
   "name": "gama_asset_client",
-  "main": "./views/index.html",
+  "main": "./index.html",
   "nodejs": true,
-  "node-main":"./public/js/main.js",
+  "node-main":"./js/index.js",
   "description": "Gama 网站提供的桌面API服务",
   "version": "0.1.1",
   "keywords": ["node", "gama", "webkit", "desktop"],
