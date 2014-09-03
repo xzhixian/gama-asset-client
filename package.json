@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "nodewebkit app.nw",
-    "jade": "jade views_src/ --out app.nw/views/ -w"
+    "jade": "jade src/jade --out app.nw/ -w",
+    "coffee": "coffee -o app.nw/js/ -cw src/coffee/"
   },
   "licenses": [
     {

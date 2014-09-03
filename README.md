@@ -2,6 +2,27 @@
 
 A GUI application to manage gama assets on the client side, can be run on Windows, Mac and Linux
 
+## 客户端目录结构
+
+```
+.
+├── LICENSE
+├── README.md
+├── app.nw
+│   ├── bootstrap                           // 依赖 bootstrap
+│   ├── index.html                          // 入口
+│   ├── js                                  // 程序相关的 js 文件
+│   ├── package.json
+├── package.json
+├── src
+│   ├── coffee                              // 本项目的 js 文件的 coffee 源代码
+│   └── jade                                // 本项目的 html 文件的 jade 源代码
+├── test
+│   └── name_test.js
+
+```
+
+
 ## Gama 网站提供的API 服务
 
 ### 客户端访问服务器的请求数据签名方式
