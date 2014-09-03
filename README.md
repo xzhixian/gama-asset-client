@@ -27,13 +27,15 @@ A GUI application to manage gama assets on the client side, can be run on Window
 
 ### 客户端访问服务器的请求数据签名方式
 
- 使用oauth-sign module 的hmacsign 加密数据签名。
- 具体参数如下：
-    method: http请求的方式（GET或POST）
-    baseUri: 请求的uri地址 （例：http://gamagama.cn/projects）
-    timestamp:请求时的时间戳。（毫秒值， 超过xx毫秒的请求将被视为违法）
-    clientID: 给定的客户端ID.(在config.js 中配置)
-    clientSecret: 给定的客户端secret (在config.js中配置)
+  使用oauth-sign module 的hmacsign 加密数据签名。
+ 
+  具体参数如下：
+  
+    * method: http请求的方式（GET或POST）
+    * baseUri: 请求的uri地址 （例：http://gamagama.cn/projects）
+    * timestamp:请求时的时间戳。（毫秒值， 超过xx毫秒的请求将被视为违法）
+    * clientID: 给定的客户端ID.(在config.js 中配置)
+    * clientSecret: 给定的客户端secret (在config.js中配置)
     
 ### 获取项目的相关信息
 
