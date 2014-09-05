@@ -42,7 +42,7 @@ A GUI application to manage gama assets on the client side, can be run on Window
  * URL: http://gamagama.cn/projects/{project_id}
  * Method: GET
  * AuthorizatioN: required
- * Request Parameters: null
+ * Request Parameters: ?timestamp=234324234&signature=加密签名
 
 ### 获取项目发包时的素材列表
 
@@ -54,14 +54,14 @@ A GUI application to manage gama assets on the client side, can be run on Window
        * pvrct_1_4: 以 PowerVR 的 pvrct_1_4 格式压缩的GPU纹理
  * Method: GET
  * AuthorizatioN: required
- * Request Parameters: nil
+ * Request Parameters: ?timestamp=234324234&signature=加密签名
 
 ### 获取项目发包时的素材列表
 
  * URL: http://gamagama.cn/projects/{project_id}/assets/{asset_id}
  * Method: GET
  * AuthorizatioN: required
- * Request Parameters: null
+ * Request Parameters: ?timestamp=234324234&signature=加密签名
 
 ## 开发相关
 
