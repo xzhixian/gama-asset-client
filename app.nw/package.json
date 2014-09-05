@@ -13,7 +13,9 @@
   },
   "dependencies":{
     "underscore": "1.5.2",
-    "shelljs": "latest"
+    "shelljs": "latest",
+    "oauth-sign": "0.4.0",
+    "mkdirp": "0.3.5"
   },
   "window": {
     "title": "Gama 桌面API服务",
@@ -23,7 +25,11 @@
     "resizable":true,
     "position": "center",
     "frame":true,
-    "fullscreen": false
+    "fullscreen": false,
+    "width":1280,
+    "height":960,
+    "min_width":1024,
+    "min_height":640
   },
   "webkit":{
     "plugin": true

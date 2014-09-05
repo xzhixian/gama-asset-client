@@ -3,10 +3,40 @@
 /*
  * 配置文件
  */
-var WEB_URL_ROOT, loadWebUrlRoot;
+var PROJECT_ID, PROJECT_NAME, PROJECT_SERIAL, WEB_URL_ROOT;
 
-WEB_URL_ROOT = "http://gamagama.cn";
+PROJECT_ID = '';
 
-loadWebUrlRoot = function() {
+PROJECT_NAME = '';
+
+PROJECT_SERIAL = "";
+
+WEB_URL_ROOT = "http://192.168.1.131:3007";
+
+exports.loadWebUrlRoot = function() {
   return WEB_URL_ROOT;
+};
+
+exports.setProjectId = function(projectId) {
+  PROJECT_ID = projectId;
+};
+
+exports.setProjectName = function(projectName) {
+  PROJECT_NAME = projectName;
+};
+
+exports.setProjectSerial = function(projectSerial) {
+  return PROJECT_SERIAL = projectSerial;
+};
+
+exports.getProjectId = function() {
+  return PROJECT_ID;
+};
+
+exports.getProjectName = function() {
+  return PROJECT_NAME;
+};
+
+exports.getProjectSerial = function() {
+  return PROJECT_SERIAL;
 };

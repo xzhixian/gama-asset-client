@@ -1,0 +1,61 @@
+extends ./layout
+
+block scripts
+  script(src='./js/asset.js', type='text/javascript')
+
+block content
+  .container
+    .text-center(style="margin: 1rem 0 1rem 0;")
+
+    .well.well-lg
+      .row
+        .col-xs-4
+          h4 项目:
+            b#project_name
+        .col-xs-5.file-box(style="{position:relative;width:340px}")
+          input.input-lg.form-control#project_path(type="text", disabled="disabled", placeholder="本地项目目录")
+        .col-xs-3
+          button.btn-lg.btn.btn-primary(type="button") 项目目录
+          input#select_file(type="file", nwdirectory, onchange="selectProjectPath()", style="position:absolute; top:0; right:80px; height:80px; filter:alpha(opacity:0);opacity: 0;width:360px")
+
+    .panel.panel-default
+      .panel-body
+        .row
+          .col-xs-2
+            button.btn-sm.btn.btn-primary(type="button", style="width:110px", onclick="startDown('desktop', 'all')") 下载桌面素材
+          .col-xs-1
+            button.btn-sm.btn.btn-warning(type="button", onclick="startDown('desktop', 'csx')") 下载csx文件
+          .col-xs-9
+            .progress
+              .progress-bar(role="progressbar", aria-valuenow='0', aria-valuemin='0', aria-valuemax='100')
+
+        .bs-callout.bs-callout-info 下载GAMA项目中所有使用到的素材的配置数据(csx文件)、PNG纹理(具备alpha通道的位图)、JPEG纹理(不透明的位图)、MP3音效文件。这些素材都下载到项目根目录下的 gama 子目录中。
+
+
+    .panel.panel-default
+      .panel-body
+        .row
+          .col-xs-2
+            button.btn-sm.btn.btn-primary(type="button", style="width:110px", onclick="startDown('ios', 'all')") 下载IOS素材
+          .col-xs-1
+            button.btn-sm.btn.btn-warning(type="button", onclick="startDown('ios', 'csx')") 下载csx文件
+          .col-xs-9
+            .progress
+              .progress-bar(role="progressbar", aria-valuenow='0', aria-valuemin='0', aria-valuemax='100')
+
+        .bs-callout.bs-callout-info 下载GAMA项目中所有使用到的素材的配置数据(csx文件)、PVRCT1纹理、MP3音效文件。这些素材都下载到项目根目录下的 gama_ios 子目录中。
+
+    .panel.panel-default
+      .panel-body
+        .row
+          .col-xs-2
+            button.btn-sm.btn.btn-primary(type="button", style="width:110px", onclick="startDown('android', 'all')") 下载Android素材
+          .col-xs-1
+            button.btn-sm.btn.btn-warning(type="button", onclick="startDown('android', 'csx')") 下载csx文件
+          .col-xs-9
+            .progress
+              .progress-bar(role="progressbar", aria-valuenow='0', aria-valuemin='0', aria-valuemax='100')
+
+        .bs-callout.bs-callout-info 下载GAMA项目中所有使用到的素材的配置数据(csx文件)、ETC_PKM纹理、MP3音效文件。这些素材都下载到项目根目录下的 gama_android 子目录中。
+
+
