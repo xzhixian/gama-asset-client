@@ -15,13 +15,14 @@
     "underscore": "1.5.2",
     "shelljs": "latest",
     "oauth-sign": "0.4.0",
-    "mkdirp": "0.3.5"
+    "async": "0.2.10",
+    "wgetjs": "0.3.3"
   },
   "window": {
     "title": "Gama 桌面API服务",
     "icon": "link.png",
     "debug": true,
-    "toolbar": false,
+    "toolbar": true,
     "resizable":true,
     "position": "center",
     "frame":true,
